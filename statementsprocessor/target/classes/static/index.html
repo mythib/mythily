@@ -1,0 +1,47 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Rabo Bank Customer Statements Processor</title>
+    <style type=text/css>
+         .leftdiv
+         {
+         float: left;
+         }
+         .middlediv
+         {
+         float: left;
+         }
+         .rightdiv
+         {
+         float: left;
+         }
+         body { background:#1F618D  url('dreamcodes/bg_images/color/c4.jpg') no-repeat center top; }
+    </style>
+</head>
+<body>
+<center>
+<h1>Rabo Bank Customer Statements Processor</h1>
+</center>
+<br>
+<br>
+
+<h3>Choose file to upload customer statement records</h3>
+<br>
+<div class="leftdiv">
+<h2>XML File Upload</h2>
+<form action="http://localhost:8080/customer/statements/xmlprocessor" method="post" enctype="multipart/form-data">
+    <input name="file" id="file" type="file" /><br><br>
+    <button name="submit" type="submit">Upload XML File</button>
+</form>
+</div>
+<div class="middlediv">
+<h2>CSV File Upload</h2>
+<form action="http://localhost:8080/customer/statements/csvprocessor" method="post" enctype="multipart/form-data">
+    <input name="file" id="file" type="file" /><br><br>
+    <button name="submit" type="submit">Upload CSV File</button>
+</form>
+</div>
+<div class="rightdev"><img src="rabobank.jpg"> </div>
+
+</body>
+</html>

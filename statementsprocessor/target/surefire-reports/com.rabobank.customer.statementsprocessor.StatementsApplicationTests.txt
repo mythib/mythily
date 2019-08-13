@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.rabobank.customer.statementsprocessor.StatementsApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.264 s - in com.rabobank.customer.statementsprocessor.StatementsApplicationTests

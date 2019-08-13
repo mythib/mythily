@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Rabo Bank Customer Statements Processor</title>
+    <style type=text/css>
+    .leftdiv
+    {
+    float: left;
+    }
+    .middlediv
+    {
+    float: left;
+    }
+    .rightdiv
+    {
+    float: right;
+    }
+    body { background:#1F618D  url('dreamcodes/bg_images/color/c4.jpg') no-repeat center top; }
+    </style>
+</head>
+<body>
+<h1><center>Rabo Bank Customer Statements Processor</center></h1>
+
+    <br>
+<div class="leftdiv">
+    <h2>Failed Transactions</h2>
+    <table>
+        <thead>
+        <tr>
+            <th> Transaction Reference </th>
+            <th> Description </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:if="${failedTransactions.empty}">
+            <td colspan="2"> No Failed Transactions Available </td>
+        </tr>
+        <tr th:each="transactions : ${failedTransactions}">
+            <td><span th:text="${transactions.transactionReference}"> Transaction Reference </span></td>
+            <td><span th:text="${transactions.description}"> Description </span></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

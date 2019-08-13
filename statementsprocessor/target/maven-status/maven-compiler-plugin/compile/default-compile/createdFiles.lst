@@ -1,0 +1,10 @@
+com\rabobank\customer\statementsprocessor\controller\CustomExceptionHandler.class
+com\rabobank\customer\statementsprocessor\StatementsApplication.class
+com\rabobank\customer\statementsprocessor\controller\StatementsController.class
+com\rabobank\customer\statementsprocessor\domain\FailedTransactions.class
+com\rabobank\customer\statementsprocessor\service\JsonStatementsService.class
+com\rabobank\customer\statementsprocessor\service\XmlStatementsService.class
+com\rabobank\customer\statementsprocessor\domain\Records.class
+com\rabobank\customer\statementsprocessor\domain\Record.class
+com\rabobank\customer\statementsprocessor\service\ValidationService.class
+com\rabobank\customer\statementsprocessor\service\CsvStatementsService.class
